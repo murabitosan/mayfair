@@ -1,0 +1,95 @@
+/* 全体背景（雲空） */
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  background: url('clouds-bg.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #3B2F2F;
+}
+
+/* 半透明で全体に統一感を持たせるオーバーレイ */
+.overlay {
+  background-color: rgba(255, 250, 240, 0.9); /* 温かい白ベース */
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* セクションの共通設定 */
+header, main, footer {
+  max-width: 960px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* 見出しのカラー調整 */
+header h1 {
+  color: #4B8E44;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #6D5843;
+  font-size: 1.1rem;
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+}
+
+.problems h2, .solutions h2 {
+  font-size: 1.5rem;
+  color: #4B8E44;
+  border-bottom: 2px solid #C7A564;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.problems li {
+  background: #fdf7ed;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-left: 5px solid #C7A564;
+  border-radius: 6px;
+}
+
+.problems h3 {
+  margin-top: 0;
+  color: #8B5E3C;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  background: #f7f5ec;
+  flex: 1 1 calc(33% - 1rem);
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #4B8E44;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #4B8E44;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+footer {
+  text-align: center;
+  color: #5A4B3F;
+  font-size: 0.9rem;
+  border-top: 2px solid #C7A564;
+}
